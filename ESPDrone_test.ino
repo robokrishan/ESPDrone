@@ -2,8 +2,6 @@
 #include <MPU6050_6Axis_MotionApps20.h>
 #include <Wire.h>
 
-unsigned long prev, now, diff;
-
 // Create Drone object
 ESPDrone quad;
 
@@ -30,22 +28,29 @@ float ypr[3];           // [yaw, pitch, roll]   yaw/pitch/roll container and gra
 
 
 void setup() {
-  // put your setup code here, to run once:
+  // 1. Initialize Radio
   quad.initRadio();
   delay(1000);
   printStep("Radio Initialized");
+
+  // 2. Initialize OLED
   quad.initOLED();
   delay(1000);
   printStep("OLED Initialized");
+
+  // 3. Initialize BLDCs
   quad.attachESCPins();
   delay(1000);
   printStep("Motors Initialized");
+
+  // 4. Begin Displaying FC Dashboard on OLED
   quad.showOLED();
   printStep("Setup complete.");
   delay(1000);
+
+  // 5. Initialize the IMU
   initIMU();
   quad.setIMU(true);
-
   delay(500);
 }
 
@@ -53,30 +58,19 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  now = millis();
   readIMU();
-  //quad.receive();
-  /////
-  int test;
-  test = analogRead(34);
-  test = map(test, 0, 4095, 0, 1023);
-  Serial.println(test);
-  quad.setThrottle(test);
-  /////
+  quad.receive();
   quad.Fly();
-  
-  prev = now;
-  now = millis();
-  diff = now - prev;
-  Serial.print(diff); Serial.println(" ms");
   quad.showOLED();
 }
 
 
+// Interrupt Service Routine
 void IRAM_ATTR dmpDataReady() {
     mpuInterrupt = true;
 }
 
+// Debug Print Info
 void printStep(char* msg) {
   Serial.print("\t[");
   Serial.print(quad.getStep());
@@ -85,6 +79,7 @@ void printStep(char* msg) {
   quad.incrementStep();
 }
 
+// Initialize DMP
 void initIMU() {
   mpu.initialize();
   if(mpu.testConnection()) {
@@ -129,6 +124,7 @@ void initIMU() {
     }
 }
 
+// Read Y-P-R from DMP
 void readIMU() {
   // if programming failed, don't try to do anything
     if (!dmpReady) return;
