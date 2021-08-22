@@ -3,7 +3,7 @@
 #include <Wire.h>
 
 // Create Drone object
-ESPDrone quad;
+ESPDrone quad;          // Default Pipe Address = "00001"
 
 // IMU Variables
 uint16_t MPU_ADDR = 0x68;
