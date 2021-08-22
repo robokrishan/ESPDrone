@@ -3,12 +3,15 @@ Library for an Embedded Flight Controller based on an ESP32 with Radio Reception
 
 This library is written for easily configuring and deploying a Quadcopter object on an ESP32 Developer Board. 
 
+
 # Dependencies
-- ESP32Servo.h (by John K. Bennett)
-- Adafruit_SH1106.h (by Limor Fried, Adafruit Industries)
-- SPI.h (Internal Arduino Lib)
-- RF24.h (by J. Coliz, 2011)
-- MPU6050_6Axis_MotionApps20.h (by Jeff Rowberg, 2012)
+Library | Author
+------- | ------
+<ESP32Servo.h> | John K. Bennett
+<Adafruit_SH1106.h> | Limor Fried, Adafruit Industries
+<SPI.h> | Internal Arduino Lib
+<RF24.h> | J. Coliz, 2011
+<MPU6050_6Axis_MotionApps20.h> | Jeff Rowberg, 2012
 
 
 The object uses the custom ESP32Servo library for sending PPM signals to the ESCs of the propellers. Default pin configuration for the ESCs is {16,17,18,19}. 
