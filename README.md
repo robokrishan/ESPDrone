@@ -74,7 +74,7 @@ SDA | 21
 # Prototype
 The following image shows the Hardware that was used for testing the Flight Controller Firmware.
 
-<p float="left">
+<p float="center">
   <img src="/img/fc.jpg" width="500" /> 
 </p>
 
