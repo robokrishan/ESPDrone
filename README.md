@@ -34,7 +34,7 @@ NRF24L01+ | 2.4 GHz Wireless Transceiver Module
 0.96" OLED Display | Embedded OLED Display module using the SH1106 driver chip
 
 
-## NRF24L01+ Connection to ESP32
+### NRF24L01+ Connection to ESP32
 
 NRF24L01+ | ESP32
 --------- | -----
