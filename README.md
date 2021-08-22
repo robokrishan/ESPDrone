@@ -75,7 +75,7 @@ SDA | 21
 The following image shows the Hardware that was used for testing the Flight Controller Firmware.
 
 <p float="left">
-  <img src="/img/fc.jpg" height="200" /> 
+  <img src="/img/fc.jpg" width="500" /> 
 </p>
 
 # Wireless Comms.
