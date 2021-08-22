@@ -74,7 +74,9 @@ SDA | 21
 # Prototype
 The following image shows the Hardware that was used for testing the Flight Controller Firmware.
 
-![Alt text](img/fc.jpg?raw=true "Title")
+<p float="left">
+  <img src="/img/fc.jpg" height="200" /> 
+</p>
 
 # Wireless Comms.
 Use the ESPDroneTransmitter library for implementing an RC Transmitter to drive the ESPDrone Flight Controller. ESPDroneTransmitter can be found on the following Github Link: https://github.com/robokrishan/ESPDroneTransmitter
