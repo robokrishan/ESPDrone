@@ -33,6 +33,10 @@ MPU6050 | Inertial Measurement Unit (IMU) with embedded Gyroscope, Accelerometer
 NRF24L01+ | 2.4 GHz Wireless Transceiver Module
 0.96" OLED Display | Embedded OLED Display module using the SH1106 driver chip
 
+The following image shows the Hardware that was used for testing the Flight Controller Firmware.
+![Alt text](img/fc.jpg?raw=true "Title")
+
+
 
 ### MPU6050 Connection to ESP32
 MPU6050 | ESP32
