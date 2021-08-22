@@ -34,7 +34,7 @@ NRF24L01+ | 2.4 GHz Wireless Transceiver Module
 0.96" OLED Display | Embedded OLED Display module using the SH1106 driver chip
 
 
-<p float="left">
+<p float="center">
   <img src="/img/nrf.jpeg" height="200" />
   <img src="/img/imu.jpg" height="200" /> 
   <img src="/img/oled.jpeg" height="200" />
