@@ -23,6 +23,17 @@ The class also houses a radio receiver implementation making use of the NRF24L01
 The ESPDrone class uses the MPU6050 IMU module for reading Yaw-Pitch-Roll values using the on-board Digital Motion Processor (DMP). The IMU needs to be connected to the I2C bus (21,22). An extra connection needs to be made between the IMU Interrupt pin and pin 33 of the ESP32.
 
 
+# Hardware
+The list of elementary hardware is tabulated below.
+
+Hardware | Description
+-------- | -----------
+ESP32 Wroom-32 NodeMCU | Microcontroller Board for running FC Firmware
+MPU6050 | Inertial Measurement Unit (IMU) with embedded Gyroscope, Accelerometer & Temperature Sensor
+NRF24L01+ | 2.4 GHz Wireless Transceiver Module
+0.96" OLED Display | Embedded OLED Display module using the SH1106 driver chip
+
+
 # Wireless Comms.
 Use the ESPDroneTransmitter library for implementing an RC Transmitter to drive the ESPDrone Flight Controller. ESPDroneTransmitter can be found on the following Github Link: https://github.com/robokrishan/ESPDroneTransmitter
 
