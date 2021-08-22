@@ -1,5 +1,5 @@
 # ESPDrone
-Library for ESP32-based Quadcopter.
+Library for an Embedded Flight Controller based on an ESP32 with Radio Reception.
 
 This library is written for easily configuring and deploying a Quadcopter object on an ESP32 Developer Board. 
 
@@ -19,3 +19,8 @@ The class also houses a radio receiver implementation making use of the NRF24L01
 
 The ESPDrone class uses the MPU6050 IMU module for reading Yaw-Pitch-Roll values using the on-board Digital Motion Processor (DMP). The IMU needs to be connected to the I2C bus (21,22). An extra connection needs to be made between the IMU Interrupt pin and pin 33 of the ESP32.
 
+
+# Wireless Comms.
+Use the ESPDroneTransmitter library for implementing an RC Transmitter to drive the ESPDrone Flight Controller. ESPDroneTransmitter can be found on the following Github Link: {}
+
+The current implementation of the Flight Controller is programmed to receive raw, digital throttle input from a potentiometer in the range [0,1023]. This is mapped to the range [1000,2000] for generating the accepted PPM signal. 
