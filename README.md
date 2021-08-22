@@ -22,6 +22,7 @@ Library | Author
 
 - The ESPDrone class uses the MPU6050 IMU module for reading Yaw-Pitch-Roll values using the on-board Digital Motion Processor (DMP). The IMU needs to be connected to the I2C bus (21,22). An extra connection needs to be made between the IMU Interrupt pin and pin 33 of the ESP32.
 
+**All dependencies have been provided in the "lib_dep.zip" file**
 
 # Hardware
 The list of elementary hardware is tabulated below.
