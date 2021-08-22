@@ -21,6 +21,6 @@ The ESPDrone class uses the MPU6050 IMU module for reading Yaw-Pitch-Roll values
 
 
 # Wireless Comms.
-Use the ESPDroneTransmitter library for implementing an RC Transmitter to drive the ESPDrone Flight Controller. ESPDroneTransmitter can be found on the following Github Link: {}
+Use the ESPDroneTransmitter library for implementing an RC Transmitter to drive the ESPDrone Flight Controller. ESPDroneTransmitter can be found on the following Github Link: https://github.com/robokrishan/ESPDroneTransmitter
 
 The current implementation of the Flight Controller is programmed to receive raw, digital throttle input from a potentiometer in the range [0,1023]. This is mapped to the range [1000,2000] for generating the accepted PPM signal. 
