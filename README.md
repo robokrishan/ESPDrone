@@ -35,9 +35,9 @@ NRF24L01+ | 2.4 GHz Wireless Transceiver Module
 
 
 <p float="left">
-  <img src="/img/nrf.jpeg" width="400" />
-  <img src="/img/imu.jpg" width="400" /> 
-  <img src="/img/oled.jpeg" width="400" />
+  <img src="/img/nrf.jpeg" width="380" />
+  <img src="/img/imu.jpg" width="380" /> 
+  <img src="/img/oled.jpeg" width="380" />
 </p>
 
 
