@@ -1,2 +1,14 @@
 # ESPDrone
 Library for ESP32-based Quadcopter.
+
+This library is written for easily configuring and deploying a Quadcopter object on an ESP32 Developer Board. 
+
+# Dependencies
+- ESP32Servo.h                    (PPM Generation)
+- Adafruit_SH1106.h               (OLED Display)
+- SPI.h                           (Radio dependency)
+- RF24.h                          (Radio Module)
+- MPU6050_6Axis_MotionApps20.h    (IMU Module)
+
+
+Dependencies are provided in the repo. The object uses the custom ESP32Servo library for sending PPM signals to the ESCs of the propellers. Default pin configuration for the ESCs is {16,17,18,19}. The ESPDrone class houses an implementation for displaying Gyro Values and Throttle on an SH1106 OLED display (128x64) connected to the default I2C bus (21,22). The class also houses a radio receiver implementation making use of the NRF24L01+ module connected to the default SPI bus (12,14,26,25,27). The RF24 class provided can configure the Radio module on the SPI bus for the ESP32 by calling the parametrized Constructor - RF24(CE,CS,SCK,MISO,MOSI). The ESPDrone class uses the MPU6050 IMU module for reading Yaw-Pitch-Roll values using the on-board Digital Motion Processor (DMP). The IMU needs to be connected to the I2C bus. An extra connection needs to be made between the IMU Interrupt pin and pin 33 of the ESP32.
