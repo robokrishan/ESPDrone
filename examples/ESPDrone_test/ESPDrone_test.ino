@@ -3,7 +3,7 @@
 #include <Wire.h>
 
 // Create Drone object
-ESPDrone quad;          // Default Pipe Address = "00001"
+ESPDrone quad;      // Default Pipe Address = "00001"
 
 // IMU Variables
 uint16_t MPU_ADDR = 0x68;
@@ -29,6 +29,11 @@ float ypr[3];           // [yaw, pitch, roll]   yaw/pitch/roll container and gra
 
 void setup() {
   // 1. Initialize Radio
+  quad.setRadioAddr("17619");
+  printStep("Radio Address Updated");
+  delay(1000);
+
+  // 1.1 Set Radio Address
   quad.initRadio();
   delay(1000);
   printStep("Radio Initialized");
