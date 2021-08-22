@@ -34,6 +34,19 @@ NRF24L01+ | 2.4 GHz Wireless Transceiver Module
 0.96" OLED Display | Embedded OLED Display module using the SH1106 driver chip
 
 
+## NRF24L01+ Connection to ESP32
+
+NRF24L01+ | ESP32
+--------- | -----
+CE | 12
+CSN | 14
+SCK | 26
+MISO | 25
+MOSI | 27
+Vcc | 3.3V
+GND | GND
+
+
 # Wireless Comms.
 Use the ESPDroneTransmitter library for implementing an RC Transmitter to drive the ESPDrone Flight Controller. ESPDroneTransmitter can be found on the following Github Link: https://github.com/robokrishan/ESPDroneTransmitter
 
