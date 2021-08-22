@@ -33,11 +33,12 @@ MPU6050 | Inertial Measurement Unit (IMU) with embedded Gyroscope, Accelerometer
 NRF24L01+ | 2.4 GHz Wireless Transceiver Module
 0.96" OLED Display | Embedded OLED Display module using the SH1106 driver chip
 
-The following image shows the Hardware that was used for testing the Flight Controller Firmware.
 
-
-![Alt text](img/fc.jpg?raw=true "Title")
-
+<p float="left">
+  <img src="/img/nrf.jpeg" width="100" />
+  <img src="/img/imu.jpg" width="100" /> 
+  <img src="/img/oled.jpeg" width="100" />
+</p>
 
 
 ### MPU6050 Connection to ESP32
@@ -69,6 +70,11 @@ VCC | 3.3V
 GND | GND
 SCL | 22
 SDA | 21
+
+# Prototype
+The following image shows the Hardware that was used for testing the Flight Controller Firmware.
+
+![Alt text](img/fc.jpg?raw=true "Title")
 
 # Wireless Comms.
 Use the ESPDroneTransmitter library for implementing an RC Transmitter to drive the ESPDrone Flight Controller. ESPDroneTransmitter can be found on the following Github Link: https://github.com/robokrishan/ESPDroneTransmitter
