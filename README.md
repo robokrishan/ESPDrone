@@ -8,11 +8,11 @@ This library is written for easily configuring and deploying a Quadcopter object
 2. Move the lib_dep.zip file out of the cloned directory.
 3. Extract the lib_dep.zip file. The extracted folder should contain all the dependencies.
 4. Open Arduino IDE and add all the libraries in the extracted folder by going to Sketch >> Include Library >> Add .ZIP library.
-  - It does not matter if the libraries are not in .ZIP format as long as they are folders.
-  - You will have to add the libraries one by one, you cannot select multiple folders.
+      - It does not matter if the libraries are not in .ZIP format as long as they are folders.
+      - You will have to add the libraries one by one, you cannot select multiple folders.
 5. In the same way, add the cloned directory (ESPDrone/) as a library.
 6. In the Arduino IDE, go to File >> Examples >> ESPDrone >> ESPDrone_test.
-  - This is the Arduino sketch to flash on the ESP32 module.
+      - This is the Arduino sketch to flash on the ESP32 module.
 
 ### Description:
 
