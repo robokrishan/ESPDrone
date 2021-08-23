@@ -41,7 +41,7 @@ Library | Author
 The list of elementary hardware is tabulated below.
 
 Hardware | Description
--------- | -----------
+:------: | -----------
 ESP32 Wroom-32 NodeMCU | Microcontroller Board for running FC Firmware
 MPU6050 | Inertial Measurement Unit (IMU) with embedded Gyroscope, Accelerometer & Temperature Sensor
 NRF24L01+ | 2.4 GHz Wireless Transceiver Module
@@ -57,7 +57,7 @@ NRF24L01+ | 2.4 GHz Wireless Transceiver Module
 
 ### MPU6050 Connection to ESP32
 MPU6050 | ESP32
-------- | -----
+:-----: | :---:
 VCC | 3.3V
 GND | GND
 SCL | 22
@@ -67,7 +67,7 @@ INT | 33
 
 ### NRF24L01+ Connection to ESP32
 NRF24L01+ | ESP32
---------- | -----
+:-----: | :---:
 CE | 12
 CSN | 14
 SCK | 26
@@ -79,7 +79,7 @@ GND | GND
 
 ### OLED Display Connection to ESP32
 SH1106 | ESP32
------- | -----
+:-----: | :---:
 VCC | 3.3V
 GND | GND
 SCL | 22
