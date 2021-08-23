@@ -14,7 +14,11 @@ This library is written for easily configuring and deploying a Quadcopter object
 6. In the Arduino IDE, go to File >> Examples >> ESPDrone >> ESPDrone_test.
       - This is the Arduino sketch to flash on the ESP32 module.
 
-### Description:
+### Description
+The sketch implements an ESPDrone object consisting of an RF24 object, an SH1106 object, 4 Servo objects and variables for storing Gyro readings. The IMU configuration is not internal to the ESPDrone class due to the use of an (External) Interrupt Service Routine. The dual core ESP32 MCU has been exploited for running an RTOS with a dedicated core for running the embedded Digital Motion Processor (DMP) and a dedicated core for running the ESPDrone object methods. Data from the DMP is stored in global variables, accessible by the ESPDrone class methods.
+
+### Further Scope
+I hope to inherit the DMP Implementation of the IMU into the ESPDrone class by configuring the ISR as a static method.
 
 
 # Dependencies
