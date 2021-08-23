@@ -19,7 +19,7 @@ This library is written for easily configuring and deploying a Quadcopter object
 
 # Dependencies
 Library | Author
-------- | ------
+:-----: | :----:
 <ESP32Servo.h> | John K. Bennett
 <Adafruit_SH1106.h> | Limor Fried, Adafruit Industries
 <SPI.h> | Internal Arduino Lib
